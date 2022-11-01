@@ -1,54 +1,44 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# JavaScript Capstone Project
 
-> Description the project.
+> This milestone of this project is all about setup and configuration of creating react project. It requires to install react using the command npx `create-react-app`. 
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo (if available)
-
-[Live Demo Link](https://livedemo.com)
+- Technologies used: VS code editor, Github, Gitflows .babelrc, npm, react. 
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+**You can clone my repository and add contributions freely. To clone my repository, use the command, `git clone https://github.com/amare1990/math-magicians.git`.**
 
 
 To get a local copy up and running follow these simple example steps.
 
-### Prerequisites
-
 ### Setup
+You have to install npm package manager globally.
 
 ### Install
+1. Create repository, named here 'math-magicians'.
+2. Follow gitflow,i.e., create dev branch and then make it the default one. finally create the  
+    Setup branch over the base of dev branch
+3. Clone the repository
+4. Go to the folder of my repository you cloned.
+5. Install the react using the command `create create-react-app`.
+6. Install the linters inside the Setup branch.
+7. Install .babelrc file to use JavaScript modules.
 
 ### Usage
-
-### Run tests
-
-### Deployment
+Then use the command `npm start` to run, update and start the web dev-server.
 
 
+## Author
 
-## Authors
+👤 **Amare Kassa**
 
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
+- GitHub: [@githubhandle](https://github.com/amare1990)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
 
@@ -56,7 +46,7 @@ To get a local copy up and running follow these simple example steps.
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/amare1990/math-magicians/issues).
 
 ## Show your support
 
@@ -70,6 +60,4 @@ Give a ⭐️ if you like this project!
 
 ## 📝 License
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT/https://github.com/amare1990/math-magicians](./LICENSE) licensed.
