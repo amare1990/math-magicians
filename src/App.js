@@ -1,18 +1,21 @@
 import './App.css';
-import parse from 'html-react-parser';
+import React from 'react';
 import Calculator from './components/Calculator';
 import './components/styles.css';
-/* import calcWrapper from './components/Calculator';
-import calcStr from './components/Calculator'; */
 
-const calcObj = new Calculator();
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
 
-function App() {
-  return (
-    <div className="App">
-      { parse(calcObj.parseStr()) }
-    </div>
-  );
+  render() {
+    return (
+      <div className="App">
+        <Calculator />
+      </div>
+    );
+  }
 }
 
 export default App;
