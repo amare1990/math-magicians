@@ -1,13 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# JavaScript Capstone Project
+# Math magicians
 
-> This milestone of this project is all about setup and configuration of creating react project. It requires to install react using the command npx `create-react-app`. 
+> This milestone of this project is all about creating UI for the Calculator component, one of the components of the main react project. JavaScript and CSS are used to design the UI of the calculator component.
 
 
 ## Built With
-
-- Technologies used: VS code editor, Github, Gitflows .babelrc, npm, react. 
+- Languages used: JavaScript, CSS.
+- Frameworks used: React.
+- Technologies used: VS code editor, Github, Gitflows .babelrc, npm. 
 
 
 ## Getting Started
@@ -29,9 +30,12 @@ You have to install npm package manager globally.
 5. Install the react using the command `create create-react-app`.
 6. Install the linters inside the Setup branch.
 7. Install .babelrc file to use JavaScript modules.
+8. Create Component directory inside the src directory.
+9. Inside the component directory, create Calculator.js file
+10. Add styles for the Calculator.
 
 ### Usage
-Then use the command `npm start` to run, update and start the web dev-server.
+Then go to the root directory of the repository and use the command `npm start` to run, update and start the web dev-server.
 
 
 ## Author
