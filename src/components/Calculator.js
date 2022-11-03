@@ -1,40 +1,54 @@
 import React from 'react';
+import calculate from '../logic/calculate';
 
 class Calculator extends React.Component {
-  calcHtml = (
-    <div className="calc-wrapper">
-      <input type="text" className="inp-display" placeholder={0} />
-      <div className="grid">
-        <div className="calc-btn"> AC </div>
-        <div className="calc-btn"> +/- </div>
-        <div className="calc-btn"> % </div>
-        <div className="calc-btn op"> + </div>
-        <div className="calc-btn"> 7 </div>
-        <div className="calc-btn"> 8 </div>
-        <div className="calc-btn"> 9 </div>
-        <div className="calc-btn op"> * </div>
-        <div className="calc-btn"> 4 </div>
-        <div className="calc-btn"> 5 </div>
-        <div className="calc-btn"> 6 </div>
-        <div className="calc-btn op"> - </div>
-        <div className="calc-btn"> 1 </div>
-        <div className="calc-btn"> 2 </div>
-        <div className="calc-btn"> 3 </div>
-        <div className="calc-btn op"> + </div>
-        <div className="calc-btn zero-btn"> 0 </div>
-        <div className="calc-btn"> . </div>
-        <div className="calc-btn op"> = </div>
-      </div>
-    </div>
-  );
-
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = { total: null, next: null, operation: null };
   }
 
+  eventHandler = (e) => {
+    const data = e.target.innerHTML;
+    const calcObj = calculate(this.state, data);
+    this.setState(calcObj);
+  };
+
   render() {
-    return this.calcHtml;
+    const { total, next, operation } = this.state;
+    return (
+      <div className="calc-wrapper">
+        <div className="inp-display">
+          {' '}
+          {total}
+          {' '}
+          {next}
+          {' '}
+          {operation}
+          {' '}
+        </div>
+        <div className="grid">
+          <button className="calc-btn" type="button"> AC </button>
+          <button className="calc-btn" type="button" onClick={this.eventHandler}> +/- </button>
+          <button className="calc-btn" type="button" onClick={this.eventHandler}> % </button>
+          <button className="calc-btn op" type="button" onClick={this.eventHandler}> + </button>
+          <button className="calc-btn" type="button" onClick={this.eventHandler}> 7 </button>
+          <button className="calc-btn" type="button" onClick={this.eventHandler}> 8 </button>
+          <button className="calc-btn" type="button" onClick={this.eventHandler}> 9 </button>
+          <button className="calc-btn op" type="button" onClick={this.eventHandler}> * </button>
+          <button className="calc-btn" type="button" onClick={this.eventHandler}> 4 </button>
+          <button className="calc-btn" type="button" onClick={this.eventHandler}> 5 </button>
+          <button className="calc-btn" type="button" onClick={this.eventHandler}> 6 </button>
+          <button className="calc-btn op" onClick={this.eventHandler} type="button"> - </button>
+          <button className="calc-btn" onClick={this.eventHandler} type="button"> 1 </button>
+          <button className="calc-btn" type="button" onClick={this.eventHandler}> 2 </button>
+          <button className="calc-btn" type="button" onClick={this.eventHandler}> 3 </button>
+          <button className="calc-btn op" type="button" onClick={this.eventHandler}> + </button>
+          <button className="calc-btn zero-btn" type="button" onClick={this.eventHandler}> 0 </button>
+          <button className="calc-btn" type="button" onClick={this.eventHandler}> . </button>
+          <button className="calc-btn op" type="button" onClick={this.eventHandler}> = </button>
+        </div>
+      </div>
+    );
   }
 }
 
