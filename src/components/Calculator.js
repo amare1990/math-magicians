@@ -5,14 +5,12 @@ class Calculator extends React.Component {
   constructor(props) {
     super(props);
     this.state = { total: null, next: null, operation: null };
-    // this.eventHandler = this.eventHandler.bind(this);
   }
 
   eventHandler = (e) => {
     const data = e.target.innerHTML;
     const calcObj = calculate(this.state, data);
     this.setState(calcObj);
-    console.log(e.target.innerHTML);
   };
 
   render() {
