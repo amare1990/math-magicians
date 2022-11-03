@@ -1,18 +1,15 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
-function Calculator() { 
-
-  const [calcObj, setState] = useState({total: null, next: null, operation: null});
+function Calculator() {
+  const [calcObj, setState] = useState({ total: null, next: null, operation: null });
 
   const eventHandler = (e) => {
     const data = e.target.innerHTML;
-    /* const calcObj = calculate(state, data); */
-    setState(calcObj => calculate(calcObj, data));
-  }; 
+    setState((calcObj) => calculate(calcObj, data));
+  };
 
-  /* render() {
-    const { total, next, operation } = this.state; */
+  const { total, next, operation } = calcObj;
   return (
     <div className="calc-wrapper">
       <div className="inp-display">
@@ -47,7 +44,6 @@ function Calculator() {
       </div>
     </div>
   );
- /*  } */
 } // end of function
 
 export default Calculator;
