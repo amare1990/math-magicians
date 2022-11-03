@@ -20,10 +20,10 @@ class Calculator extends React.Component {
         <div className="inp-display">
 
           {total}
-
-          {next}
-
+          {'  '}
           {operation}
+          {'  '}
+          {next}
 
         </div>
         <div className="grid">
