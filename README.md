@@ -2,13 +2,13 @@
 
 # Math magicians
 
-> This milestone of this project is all about analyzing the already implemented `calculate.js` and `operate.js` codes and implement event handling for each button of the calculator in the Calculator component, one of the components of the main react project. JavaScript and CSS are used to design the UI of the calculator component. Class-based React event handling using `setState` method is used to implement the event handling.
+> This milestone of this project is all about refactoring class-based components into function-based hooks using `useSate` hook. Event handling for each button of the calculator in the Calculator component is done using function-based component. The calculator object from the `calculator.js` is updated using the `useState` hook, the most widely used hook type. JavaScript and CSS are used to design the UI of the calculator component. The class-based calculator is modified to impelement the event handling of calculator's buttons. JavScript programming script is used to modify the class-based component. The `App` component is also refactored using hooks to have the same component type.
 
 
 ## Built With
 - Languages used: JavaScript, CSS.
 - Frameworks used: React.
-- Technologies used: VS code editor, Github, Gitflows .babelrc, npm. 
+- Technologies used: VS code editor, Github, Gitflows .babelrc, npm, big.js. 
 
 
 ## Getting Started
@@ -32,8 +32,10 @@ You have to install npm package manager globally.
 7. Install .babelrc file to use JavaScript modules.
 8. Create Component directory inside the src directory.
 9. Inside the component directory, create Calculator.js file.
-10. Add event handling functionality for each button of the calculator.
+10. Add event handling functionality for each button of the calculator (class-based event  
+    handling).
 11. Add styles for the Calculator.
+12. Refactor the calculator button handling using `useSate` hooks.
 
 ### Usage
 Then go to the root directory of the repository and use the command `npm start` to run, update and start the web dev-server.
