@@ -2,7 +2,7 @@
 
 # Math magicians
 
-> This milestone of this project is all about creating UI for the Calculator component, one of the components of the main react project. JavaScript and CSS are used to design the UI of the calculator component.
+> This milestone of this project is all about analyzing the already implemented `calculate.js` and `operate.js` codes and implement event handling for each button of the calculator in the Calculator component, one of the components of the main react project. JavaScript and CSS are used to design the UI of the calculator component. Class-based React event handling using `setState` method is used to implement the event handling.
 
 
 ## Built With
@@ -31,8 +31,9 @@ You have to install npm package manager globally.
 6. Install the linters inside the Setup branch.
 7. Install .babelrc file to use JavaScript modules.
 8. Create Component directory inside the src directory.
-9. Inside the component directory, create Calculator.js file
-10. Add styles for the Calculator.
+9. Inside the component directory, create Calculator.js file.
+10. Add event handling functionality for each button of the calculator.
+11. Add styles for the Calculator.
 
 ### Usage
 Then go to the root directory of the repository and use the command `npm start` to run, update and start the web dev-server.
