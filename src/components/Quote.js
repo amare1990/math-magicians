@@ -2,7 +2,7 @@ import React from 'react';
 
 function Quote() {
   return (
-    <p>
+    <p className="quote">
       {' '}
       Mathematics is not about numbers, equations, compuations, or algorithms:
       It is about understanding. -William Paul Thurston
