@@ -11,36 +11,41 @@ function Calculator() {
 
   const { total, next, operation } = calcObj;
   return (
-    <div className="calc-wrapper">
-      <div className="inp-display">
+    <div className="calculator">
+      <h2 className="compute-title">
+        Let&apos;s do some math!
+      </h2>
+      <div className="calc-wrapper">
+        <div className="inp-display">
 
-        {total}
-        {'  '}
-        {operation}
-        {'  '}
-        {next}
+          {total}
+          {'  '}
+          {operation}
+          {'  '}
+          {next}
 
-      </div>
-      <div className="grid">
-        <button className="calc-btn" type="button" onClick={eventHandler}>AC</button>
-        <button className="calc-btn" type="button" onClick={eventHandler}>+/-</button>
-        <button className="calc-btn" type="button" onClick={eventHandler}>%</button>
-        <button className="calc-btn op" type="button" onClick={eventHandler}>+</button>
-        <button className="calc-btn" type="button" onClick={eventHandler}>7</button>
-        <button className="calc-btn" type="button" onClick={eventHandler}>8</button>
-        <button className="calc-btn" type="button" onClick={eventHandler}>9</button>
-        <button className="calc-btn op" type="button" onClick={eventHandler}>x</button>
-        <button className="calc-btn" type="button" onClick={eventHandler}>4</button>
-        <button className="calc-btn" type="button" onClick={eventHandler}>5</button>
-        <button className="calc-btn" type="button" onClick={eventHandler}>6</button>
-        <button className="calc-btn op" onClick={eventHandler} type="button">-</button>
-        <button className="calc-btn" onClick={eventHandler} type="button">1</button>
-        <button className="calc-btn" type="button" onClick={eventHandler}>2</button>
-        <button className="calc-btn" type="button" onClick={eventHandler}>3</button>
-        <button className="calc-btn op" type="button" onClick={eventHandler}>÷</button>
-        <button className="calc-btn zero-btn" type="button" onClick={eventHandler}>0</button>
-        <button className="calc-btn" type="button" onClick={eventHandler}>.</button>
-        <button className="calc-btn op" type="button" onClick={eventHandler}>=</button>
+        </div>
+        <div className="grid">
+          <button className="calc-btn" type="button" onClick={eventHandler}>AC</button>
+          <button className="calc-btn" type="button" onClick={eventHandler}>+/-</button>
+          <button className="calc-btn" type="button" onClick={eventHandler}>%</button>
+          <button className="calc-btn op" type="button" onClick={eventHandler}>+</button>
+          <button className="calc-btn" type="button" onClick={eventHandler}>7</button>
+          <button className="calc-btn" type="button" onClick={eventHandler}>8</button>
+          <button className="calc-btn" type="button" onClick={eventHandler}>9</button>
+          <button className="calc-btn op" type="button" onClick={eventHandler}>x</button>
+          <button className="calc-btn" type="button" onClick={eventHandler}>4</button>
+          <button className="calc-btn" type="button" onClick={eventHandler}>5</button>
+          <button className="calc-btn" type="button" onClick={eventHandler}>6</button>
+          <button className="calc-btn op" onClick={eventHandler} type="button">-</button>
+          <button className="calc-btn" onClick={eventHandler} type="button">1</button>
+          <button className="calc-btn" type="button" onClick={eventHandler}>2</button>
+          <button className="calc-btn" type="button" onClick={eventHandler}>3</button>
+          <button className="calc-btn op" type="button" onClick={eventHandler}>÷</button>
+          <button className="calc-btn zero-btn" type="button" onClick={eventHandler}>0</button>
+          <button className="calc-btn" type="button" onClick={eventHandler}>.</button>
+          <button className="calc-btn op" type="button" onClick={eventHandler}>=</button>
+        </div>
       </div>
     </div>
   );

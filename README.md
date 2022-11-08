@@ -2,7 +2,7 @@
 
 # Math magicians
 
-> This milestone of this project is all about refactoring class-based components into function-based hooks using `useSate` hook. Event handling for each button of the calculator in the Calculator component is done using function-based component. The calculator object from the `calculator.js` is updated using the `useState` hook, the most widely used hook type. JavaScript and CSS are used to design the UI of the calculator component. The class-based calculator is modified to impelement the event handling of calculator's buttons. JavScript programming script is used to modify the class-based component. The `App` component is also refactored using hooks to have the same component type.
+> The objective of this milestone of the `Math: magicians` project, `Math: magicians- Full website` is to add `navbar`(or `Header`), `homepage`, and `quote` section. Since the Header component is present for each component added, it is put outside the `Routes` wrapper in the `App.js` main component. React library is used to develop all the components. The other main objective of the milestone of this project is to practice adding styles in React projects.
 
 
 ## Built With
