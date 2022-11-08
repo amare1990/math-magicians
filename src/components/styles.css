@@ -5,7 +5,6 @@
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 12px;
   font-weight: normal;
   display: flex;
@@ -13,9 +12,17 @@ body {
   justify-content: center;
 }
 
+#root {
+  width: 900px;
+}
+
+.App {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .calc-wrapper {
-  width: 300px;
-  margin: 50px auto;
+  width: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -54,4 +61,64 @@ body {
 .zero-btn {
   grid-column-start: 1;
   grid-column-end: 3;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.welcome-message {
+  padding: 20px 0;
+}
+
+.homepage > p {
+  padding-bottom: 10px;
+}
+
+.link-separator {
+  width: 2px;
+  height: 15px;
+  background-color: #333;
+  list-style: none;
+  margin-right: 10px;
+}
+
+.nav-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.link-item {
+  padding-right: 10px;
+  list-style: none;
+}
+
+.active-link {
+  color: rgb(211, 71, 94);
+}
+
+.calculator {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+
+.quote {
+  padding-top: 50px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.compute-title {
+  width: 100%;
 }
