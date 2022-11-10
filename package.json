@@ -41,6 +41,7 @@
   },
   "devDependencies": {
     "html-react-parser": "^3.0.4",
+    "netlify-cli": "^12.1.1",
     "stylelint": "^13.13.1",
     "stylelint-config-standard": "^21.0.0",
     "stylelint-csstree-validator": "^1.9.0",
