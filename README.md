@@ -10,6 +10,9 @@
 - Frameworks used: React.
 - Technologies used: VS code editor, Github, Gitflows .babelrc, npm, big.js. 
 
+## Live Demo
+https://jade-pegasus-4a9bc3.netlify.app/
+
 
 ## Getting Started
 
