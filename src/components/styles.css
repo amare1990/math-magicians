@@ -17,7 +17,8 @@ body {
 }
 
 .App {
-  width: 90%;
+  padding-top: 40px;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -121,4 +122,19 @@ body {
 
 .compute-title {
   width: 100%;
+}
+
+
+@media screen and (max-width: 767.98px) {
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+
+  .calc-wrapper {
+    width: 100%;
+  }
+
 }
